@@ -5,15 +5,16 @@ export default function Meme(props) {
 
     function handleClick() {
 
-        let url
+        // let url
         function getMemeImage(){
             const memesArray = memesData.data.memes
             const randomNumber = Math.floor(Math.random() * memesArray.length)
-            url = memesArray[randomNumber].url
+            const url = memesArray[randomNumber].url
+            console.log(url)
         }
     return (
         <main>
-            <p>{}</p>
+            {/* <p>{}</p> */}
             <div className="form">
                 <input
                 type="text"
